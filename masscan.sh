@@ -16,7 +16,7 @@ if ! which zgrab &>/dev/null; then
  exit;
 fi
 echo;
-contents="comment=$2+$1&author=$2&email=hey%40gmail.com&url=$1&submit=Post+Comment&comment_post_ID=5&comment_parent=0";
+contents="comment=$2+$1&author=$2&email=hey%40gmail.com&url=$1&submit=Post+Comment&comment_post_ID=5&comment_parent=0&wp-comment-cookies-consent=true";
 echo "Using Contents $contents";
 echo;
 clen=$(echo -ne $contents | wc -c);
